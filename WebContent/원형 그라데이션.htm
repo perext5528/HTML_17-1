@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>원형 그라데이션</title>
+	<style type="text/css">
+		div{width:100px; height:60px; border:1px solid white;}
+		#radial1 {background:radial-gradient(circle, red, blue);}
+		#radial2 {background:radial-gradient(ellipse, red, blue);}
+		#radial3 {background:radial-gradient(circle, red, green 30%, blue);}
+		#radial4 {background:radial-gradient(circle closest-corner at 20% 40%, red, green 30%, blue);}
+		#radial5 {background:repeating-radial-gradient(circle, red, blue 20%);}
+		#radial6 {background:radial-gradient(circle closest-side at 20% 40%, red, green 30%, blue);}
+	</style>
+</head>
+<body>
+	<div id="radial1"></div><br>
+	<div id="radial2"></div><br>
+	<div id="radial3"></div><br>
+	<div id="radial4"></div><br>
+	<div id="radial5"></div><br>
+	<div id="radial6"></div><br>
+</body>
+</html>

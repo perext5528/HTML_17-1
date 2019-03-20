@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>텍스트 공백, 줄바꿈</title>
+	<style type="text/css">
+		div{
+			font-family:courier new;
+			width:400px;
+			border:1px solid #c3c3c3;
+			margin-top:3px;
+			background-color:#ddddd;
+		}
+	</style>
+</head>
+<body>
+	<h3>CSS3 텍스트의 공백 처리 연습</h3>
+	<div style="white-space:normal"><p><mark>(white-space:normal)</mark>
+	normal은 연속해서 나오는 공백이나 탭 그리고 줄 바꿈을 모두 하나의 공백으로 처리
+	그리고 박스 가로 폭에 따라서 자동 개행</p></div>
+	
+	<div style="white-space:nowrap"><p><mark>(white-space:nowrap)</mark>
+	nowrap은 연속된 공백이나 탭을 하나의 공백으로 처리</p></div>
+	
+	<div style="white-space:pre"><p><mark>(white-space:pre)</mark>
+	pre값은 연속된 공백(        )이나
+	탭{		}
+	그리고 줄 바꿈을 모두 처리하지 않고 원문 그대로 표시</p></div>
+	<div style="white-space:pre-wrap"><p><mark>(white-space:pre-wrap)</mark>
+	pre-wrap은 연속하는 공백(      ) 문자들을 하나의 공백으로 처리하지 않지만
+	줄 바꿈은 박스의 가로 폭을 넘는 경우에 처리</p></div>
+	<div style="white-space:pre-line"><p><mark>(white-space:pre-line)</mark>
+	pre-line은 줄 바꿈한 것이 적용되면서
+	박스의 가로 폭을 넘어가는 텍스트도 자동으로 개행</p></div>
+	
+</body>
+</html>

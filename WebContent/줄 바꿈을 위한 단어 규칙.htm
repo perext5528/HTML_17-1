@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>줄 바꿈을 위한 단어 규칙</title>
+<style type="text/css">
+div {
+	width: 400px; border: 1px solid black;
+	padding: 10px;
+	font-size: 16px;
+}
+
+div#break1 {
+	word-break: normal
+}
+
+div#break2 {
+	word-break: break-all
+}
+
+div#break3 {
+	word-break: keep-all
+}
+</style>
+</head>
+<body>
+	<h3>CSS3 텍스트 줄 바꿈 지정</h3>
+	<div id="break1">
+		<mark>normal</mark>
+		은 줄 바꿈이 일어나지 않게 지정, break-all은
+		 특수 문자를 제외하고 강제로 줄 바꿈 지정, keep-all은 띄어쓰기를 기준으로 줄 바꿈 실행
+	</div>
+	<div id="break2">
+		normal 은 줄 바꿈이 일어나지 않게 지정,<mark>break-all</mark>은
+		 특수 문자를 제외하고 강제로 줄 바꿈 지정, keep-all은 띄어쓰기를 기준으로 줄 바꿈 실행
+	</div>
+	<div id="break3">
+		normal 은 줄 바꿈이 일어나지 않게 지정, break-all은
+		 특수 문자를 제외하고 강제로 줄 바꿈 지정,<mark>keep-all</mark>은 띄어쓰기를 기준으로 줄 바꿈 실행
+	</div>
+</body>
+</html>
